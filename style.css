@@ -1,0 +1,104 @@
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #ccc;
+	width: 80vw;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.profile{
+	width: 100px;
+	height: auto;
+	float: right;
+}
+
+main{
+	clear: both;
+}
+
+p, ul{
+	padding-left: 10px;
+}
+
+h2{
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+span{
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-left: 0;
+	padding-right: 30px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.info{
+	display: flex;
+	align-self: center;
+	align-items: flex-end;
+	float: left;
+}
+
+h1{
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.profile img{
+	width: 100%;
+	height: 50%;
+}
+
+ul{
+	list-style: none;
+}
+
+/* POUR LES PC / TABLETTES / DESKTOP */
+@media screen and (min-width: 800px)
+{
+	body{
+		width: 800px;
+	}
+}
+
+/* POUR MOBILE */
+@media screen and (max-width: 800px)
+{
+	.profile img{
+		display: none;
+	}
+
+	h1{
+		margin-top: 60px;
+		font-size: 20px;
+	}
+
+	body{
+
+	position: absolute;
+	width: 80vw;
+	height: 100%;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 2px none;
+	border-radius: 7px;
+	}
+}
+
